@@ -1,128 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Education</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 70px 100px 100px 100px 100px;
+      gap: 10px;
+      border-radius:55%;
+    }
+
+    .first {
+      grid-column: span 3;
+    }
+
+    .card {
+      background-color: rgb(252, 130, 31);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="grid-container">
+    <div class="first card"><h1>My Education<i class="fa-solid fa-copy fa-lg" style="color: #FFD43B;"></i></h1></div>
+    <div class="card">
+      <h2>Degree/Course</h2>
+      </div>
+    <div class="card"><h2>Percentage/CGPA</h2></div>
+    <div class="card"><h2>Year of Passing</h2> </div>
+    <div class="card"><h3>B.Tech in Electrical Engineering,
+      Cooch Behar Government Engineering College , MAKAUT</h3> </div>
+    <div class="card"><h3>9.17</h3></div>
+    <div class="card"><h3>2023</h3></div>
+    <div class="card"><h3>H.S in Pure Science
+      , Fulia Balika Vidyalaya , WBCHSE</h3></div>
+  
+    <div class="card"><h3>60.8</h3></div>
+    <div class="card"><h3>--</h3></div>
+    <div class="card"><h3>Secondary Education
+      ,Fulia Balika Vidyalaya , WBBSE</h3></div>
+    <div class="card"><h3>61.87</h3></div>
+    <div class="card">--</div>
+    
+  </div>
 
 
- <link href="https://fonts.googleapis.com/css2?family=cursive:ital,wght@1,400;1,700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-
-  <link rel="stylesheet" href="/styles/content.css">
-  <link rel="icon" href="/4.3 HTML Porfolio Project/faviconN.ico">
-
-  <body style="padding:5% 4%;background-color: azure;display: flex;
-  flex-direction: column;
-  justify-content: stretch;">
-    <h2 style="text-align: center;padding: 1% 0%;">Education<i class="fa-solid fa-copy fa-lg" style="color: #FFD43B;"></i> </h2>
-     <div class="row">
-
-     <div class="col-lg-4">
-        <h4>Degree/Course </h4>
-        </div>
-        <div class="col-lg-4">           
-        <h4>Percentage/CGPA</h4>  
-             </div>
-
-             <div class="col-lg-4">   
-        <h4>Year of Passing</h4> 
-        </div>
-        </div>
-        <hr style="line-height:3px;">     
-        <div class="row">
-
-            <div class="col-lg-4">
-               <h4>B.Tech in Electrical Engineering,
-                Cooch Behar Government Engineering College , MAKAUT </h4>
-               </div>
-               <div class="col-lg-4">           
-               <h4>   9.17</h4>  
-                    </div>
-       
-                    <div class="col-lg-4">   
-               <h4>  2023</h4> 
-               </div>
-           
-            </div>
-        <hr style="line-height:3px;">    
-
-        <div class="row">
-
-            <div class="col-lg-4">
-               <h4>H.S in Pure Science
-                   , Fulia Balika Vidyalaya , WBCHSE </h4>
-               </div>
-               <div class="col-lg-4">           
-               <h5>60.8%</h5>  
-                    </div>
-       
-                    <div class="col-lg-4">   
-               <h4> - </h4> 
-               </div>
-           
-        </div>
-
-        <hr style="line-height:3px;">    
-
-        <div class="row">
-
-            <div class="col-lg-4">
-               <h4>Secondary Education
-                  ,Fulia Balika Vidyalaya , WBBSE</h4>
-               </div>
-               <div class="col-lg-4">           
-               <h5>61.87%</h5>  
-                    </div>
-       
-                    <div class="col-lg-4">   
-               <h4> - </h4> 
-               </div>
-           
-        </div>
-        <br>
-        <br>
-        <br>
-        <div style="background-color: #ffd5ff3B;">
-<h3>Achievements</h3>
 <br>
 <br>
-<ul> 1. IIT KHARAGPUR TECH
-    FEST Participation
-    B.Plan 2020 appreciation
-    was
-    published in the
-    newspaper THE
-    TELEGRAPH .</ul>
-   <ul> 2. I organized the college's first tech fest with my team members. Where I have conducted many workshops on robotics based on DC motor, Arduino UNO applications, software programming applications with the help of my team members.</ul>
-    </div>
-  <br>
-  <br>
-  <br>
-    <div style="background-color:coral">
-        <h3>AREAS OF INTERESTS</h3>
-        <p style="padding:5% 5% ;font-size:larger; color:powderblue">Electrical Machines,  Power Electronics,  Software development,  Web development,  Communication</p>
-    </div>
-   <br>
-   <br>
-   <br>
-    <div style="background-color:rgba(194, 255, 80, 0.836)">
-        <h3>HOBBIES</h3>
-        <p style="padding:5% 5% ;font-size:larger; color:rgb(209, 59, 59)">Sports lover, Reading books, Meditation, Learning about Nutrition, I love to create repository on Github.</p>
-    </div>
+<br>
+  <div style="background-color:coral">
+    <h2>AREAS OF INTERESTS</h2>
+    <p style="padding:5% 5% ;font-size:larger; color:powderblue">Electrical Machines,  Power Electronics,  Software development,  Web development,  Communication</p>
+</div>
+<br>
+<br>
+<br>
+<div style="background-color:rgba(194, 255, 80, 0.836)">
+    <h2>HOBBIES</h2>
+    <p style="padding:5% 5% ;font-size:larger; color:rgb(209, 59, 59)">Sports lover, Reading books, Meditation, Learning about Nutrition, I love to create repository on Github.</p>
+</div>
 
-
-
-  </body>
+  
