@@ -1,90 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Experience</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 70px 100px 100px 100px ;
+      gap: 10px;
+      border-radius:25%;
+      border: 3px solid gold;
+    }
+    body{
+         font-family: "Poppins", sans-serif;
+         margin: 50px 50px 0 50px;
+         background-color: #faf9f6;
+         display: flex;
+        flex-direction: column;
+        min-height: 95vh;
+    }
+
+
+    .first {
+      grid-column: span 3;
+    }
+
+    .card {
+      background-color: #d101e47c;
+      text-align: center;
+      color:#fff;
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
   
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-
- <link href="https://fonts.googleapis.com/css2?family=cursive:ital,wght@1,400;1,700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-
-  <link rel="stylesheet" href="/styles/content.css">
-  <link rel="icon" href="faviconN.ico">
-  </head>
-
-
+  <div class="grid-container">
+    <div class="first card"><h1>My  Experience</h1><i class="fa-solid fa-copy fa-lg" style="color: #FFD43B;"></i></div>
+    <div class="card">
+      <h2>Duration</h2>
+      </div>
+    <div class="card"><h2>Company</h2></div>
+    <div class="card"><h2>Position</h2> </div>
+    <div class="card"><h3>Jun-2023 - Aug-2023</h3> </div>
+    <div class="card"><h3>BYJU'S</h3></div>
+    <div class="card"><h3>BDA</h3></div>
+    <div class="card"><h3>Jun-2023 - Aug-2023</h3></div>
+  
+    <div class="card"><h3>Be10x.AI</h3></div>
+    <div class="card"><h3>AI Consultant(BDI)</h3></div>
+   
+  </div>
+<footer><h4>I will update my experience here..</h4></footer>
+</body>
+ 
+</html>
 
 
-
-<body style="padding:5% 4%;background-color: azure;">
-    <h2 style="text-align: center;padding: 1% 0%;">Experience<i class="fa-solid fa-copy fa-lg" style="color: #FFD43B;"></i> </h2>
-     <div class="row">
-
-     <div class="col-lg-4">
-        <h4>Duration</h4>
-        </div>
-        <div class="col-lg-4">           
-        <h4>Company</h4>  
-             </div>
-
-             <div class="col-lg-4">   
-        <h4>Position</h4> 
-        </div>
-        </div>
-        <hr style="line-height:3px;">     
-        <div class="row">
-
-            <div class="col-lg-4">
-               <h4> Jun-2023 - Aug-2023</h4>
-               </div>
-               <div class="col-lg-4">           
-               <h4>BYJU'S</h4>  
-                    </div>
-       
-                    <div class="col-lg-4">   
-               <h4>BDA</h4> 
-               </div>
-           
-            </div>
 
 
 
         
-
-
-        <hr style="line-height:3px;">     
-        <div class="row">
-
-            <div class="col-lg-4">
-               <h4> Sep-2023 - Nov-2023</h4>
-               </div>
-               <div class="col-lg-4">           
-               <h4>Be10x.AI</h4>  
-                    </div>
-       
-                    <div class="col-lg-4">   
-               <h4>AI Consultant(BDI)</h4> 
-               </div>
-           
-            </div>
-  <br>
-  <br>
-  
-            <h4 style="color:grey;">Will update soon based on my technical skills..</h4>
-
-
-</body>
-</html>
+          
