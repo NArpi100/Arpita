@@ -24,6 +24,47 @@
       color:#fff;
       text-align: center;
     }
+    .container {
+      color: white;
+      border: 5px solid #d101e47c;
+      display: inline-flex;
+      flex-direction: column;
+      width:100%;
+      gap:7px;
+    }
+
+    .container > * {
+      flex-basis: 200px;
+    }
+
+    .red {
+      background-color: #eb4d4b;
+    }
+
+    .orange {
+      background-color: #f0932b;
+    }
+
+    .yellow {
+      background-color: #f6e58d;
+    }
+ @media(max-width:600px){
+      .container > * {
+      flex-basis: 100px;
+    }
+
+    .red {
+      background-color: #dbeb4b;
+    }
+
+    .orange {
+      background-color: #f56506ee;
+    }
+
+    .yellow {
+      background-color: #b272cf;
+    }
+ }
   </style>
 </head>
 
@@ -56,24 +97,17 @@
 <br>
 <br>
 <br>
-  <div style="background-color:coral">
-    <h2 style="color:grey;">AREAS OF INTERESTS</h2>
-    <p style="padding:5% 5% ;font-size:larger; color:#fff;font-size:25px;font-weight: bold;" > =>Electrical Machines   </br>=>  Power Electronics    </br>=>  Software development      </br>=>  Web development     </br>=>  Communication    </br>   </p>
-</div>
-<br>
-<br>
-<br>
-<div style="background-color:rgba(194, 255, 80, 0.836)">
-    <h2 style="color:grey;">HOBBIES</h2>
-    <p style="padding:5% 5% ;font-size:25px;font-weight: bold; color:#fff;" > =>Sports lover</br>=>Reading books</br>=> Meditation</br>=> Learning about Nutrition</br>=>I love to create repository on Github</br> </p>
-</div>
-<br>
-<br>
-<br>
-<div style="background-color:rgba(36, 236, 193, 0.836)">
-    <h2 style="color:grey;">ACHIEVEMENTS</h2>
+  
+   
+        
+<div class="container">
+    <div class="red"><h2 style="color:grey;">AREAS OF INTERESTS</h2>
+    <p style="padding:5% 5% ;font-size:larger; color:#fff;font-size:25px;font-weight: bold;" > =>Electrical Machines   </br>=>  Power Electronics    </br>=>  Software development      </br>=>  Web development     </br>=>  Communication    </br>   </p></div>
+    <div class="orange"><h2 style="color:grey;">HOBBIES</h2>
+    <p style="padding:5% 5% ;font-size:25px;font-weight: bold; color:#fff;" > =>Sports lover</br>=>Reading books</br>=> Meditation</br>=> Learning about Nutrition</br>=>I love to create repository on Github</br> </p></div>
+    <div class="yellow"><h2 style="color:grey;">ACHIEVEMENTS</h2>
     <p style="padding:1% 5% ;font-size:larger; color:#fff;">
-        1. KHARAGPUR TECH
+        1. IIT KHARAGPUR TECH
         FEST Participation
         B.Plan 2020 appreciation
         was
@@ -86,7 +120,9 @@
         Where I conducted so
         many workshops about
         robotics by helping of my
-        team members .</p>
+        team members .</p></div>
+
 </div>
+  
 </body>
 </html>
