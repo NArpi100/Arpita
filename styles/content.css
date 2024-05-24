@@ -13,6 +13,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  background-image: url(public/tech_layout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
 }
 li{
    color:#fff;
