@@ -1,7 +1,5 @@
-html,
-body {
-  height: 100%;
-}
+
+
 .creative{
   color:#ff4c17;
   
@@ -10,10 +8,7 @@ body {
 
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  background-image: url(public/tech_layout.jpg);
+   background-image: url(lb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial, sans-serif;
